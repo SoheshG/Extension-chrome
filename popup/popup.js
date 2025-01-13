@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     reportDiv.innerHTML = Object.entries(siteTime)
       .map(
         ([site, time]) =>
-          `<p>${site}: ${Math.floor(time / 60)} minutes ${time % 60} seconds</p>`
+          `<p>${site} :${Math.floor(time / 60)} minutes ${time % 60} seconds</p>`
       )
       .join("");
   });
